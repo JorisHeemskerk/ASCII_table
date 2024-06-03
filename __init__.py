@@ -1,1 +1,2 @@
-import ASCII_table
+from .ascii_table import ASCIITable
+from .colours import Colours
