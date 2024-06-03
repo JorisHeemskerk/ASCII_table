@@ -126,12 +126,12 @@ class ASCIITable(Generic[T]):
 
         # content rows
         for i, row in enumerate(self.data):
-            # dividing ine
+            # dividing line
             result += f"├{dividing_line}┤\n"
 
             for j in range(inner_cell_height):
-                if j == inner_cell_height // 2 - 1:
-                    # index for j = 0
+
+                if j == inner_cell_height // 2 - 1 or inner_cell_height == 1:
                     primer = f"{' ' * (
                         inner_cell_width // 2 - len(str(i)) + 1
                     )}"\
